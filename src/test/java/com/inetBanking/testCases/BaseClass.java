@@ -32,8 +32,9 @@ public class BaseClass {
 		PropertyConfigurator.configure("Log4j.properties");    
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get(baseURL);
 		driver.manage().window().maximize();
+		driver.get(baseURL);
+		
 	}
 	
 	@AfterClass

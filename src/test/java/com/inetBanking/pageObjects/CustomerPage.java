@@ -114,40 +114,51 @@ public class CustomerPage {
 	}
 
 	public void getCustomerDOB(String mm, String dd, String yyyy) {
+		customerDOB.clear();
+		
+		
 		customerDOB.sendKeys(mm);
 		customerDOB.sendKeys(dd);
 		customerDOB.sendKeys(yyyy);
 	}
 
 	public void getCustomerAddress(String custadd) {
+		customerAddress.clear();
 		customerAddress.sendKeys(custadd);
 	}
 
 	public void getCustomerCity(String custcity) {
+		
 		customerCity.sendKeys(custcity);
 	}
 
 	public void getCustomerState(String custstate) {
+		
 		customerState.sendKeys(custstate);
 	}
 
 	public void getCustomerPinNo(String custpin) {
+		
 		customerPin.sendKeys(String.valueOf(custpin));
 	}
 
 	public void getCustomerNumber(String custnum) {
+		
 		customerNumber.sendKeys(custnum);
 	}
 
 	public void getCustomerEmail(String custemail) {
+		
 		customerEmail.sendKeys(custemail);
 	}
 
 	public void getCustomerPassword(String custpass) {
+		
 		customerPassword.sendKeys(custpass);
 	}
 
 	public void clickToSubmit() {
+		
 		clickSubmit.click();
 
 	}
@@ -185,17 +196,18 @@ public class CustomerPage {
 
 	public void isCustomerNameEditable(String custname) {
 		String name = customerName.getAttribute("disabled");
-
-		System.out.println(name);
-
-		if (name.equalsIgnoreCase("true")) {
-			customerName.sendKeys(custname);
-		}
+	    boolean isEditable = !(name!=null && name.equals(true));
+	    if(isEditable) {
+//	    	customerName.clear();
+	    	customerName.sendKeys(custname);
+	    }
 	}
 
 	public void isCustomerGenderEditable() {
 		String name = customerGender.getAttribute("disabled");
-		if (name.equalsIgnoreCase("true")) {
+		boolean isEditable = !(name!=null && name.equals(true));
+		if (isEditable) {
+		
 			customerGender.click();
 		}
 
@@ -203,7 +215,9 @@ public class CustomerPage {
 
 	public void isCustomerDOBEditable(String mm, String dd, String yyyy) {
 		String name = customerDOB.getAttribute("disabled");
-		if (name.equalsIgnoreCase("true")) {
+		boolean isEditable = !(name!=null && name.equals(true));
+		if (isEditable) {
+//			customerDOB.clear();
 			customerDOB.sendKeys(mm);
 			customerDOB.sendKeys(dd);
 			customerDOB.sendKeys(yyyy);
@@ -213,7 +227,10 @@ public class CustomerPage {
 
 	public void isCustomerAddressEditable(String custadd) {
 		String name = customerAddress.getAttribute("disabled");
-		if (name.equalsIgnoreCase("true")) {
+		boolean isEditable = !(name!=null && name.equals(true));
+//		System.out.println(name);
+		if (isEditable) {
+//			customerAddress.clear();
 			customerAddress.sendKeys(custadd);
 		}
 
@@ -221,7 +238,9 @@ public class CustomerPage {
 
 	public void isCustomerCityEditable(String custcity) {
 		String name = customerAddress.getAttribute("disabled");
-		if (name.equalsIgnoreCase("true")) {
+		boolean isEditable = !(name!=null && name.equals(true));
+		if (isEditable) {
+//			customerAddress.clear();
 			customerAddress.sendKeys(custcity);
 		}
 
@@ -229,7 +248,9 @@ public class CustomerPage {
 
 	public void isCustomerStateEditable(String custadd) {
 		String name = customerState.getAttribute("disabled");
-		if (name.equalsIgnoreCase("true")) {
+		boolean isEditable = !(name!=null && name.equals(true));
+		if (isEditable) {
+//			customerState.clear();
 			customerState.sendKeys(custadd);
 		}
 
@@ -237,7 +258,9 @@ public class CustomerPage {
 
 	public void isCustomerPinNoEditable(String custpin) {
 		String name = customerPin.getAttribute("disabled");
-		if (name.equalsIgnoreCase("true")) {
+		boolean isEditable = !(name!=null && name.equals(true));
+		if (isEditable) {
+//			customerPin.clear();
 			customerPin.sendKeys(custpin);
 		}
 
@@ -245,7 +268,9 @@ public class CustomerPage {
 
 	public void isCustomerNumberEditable(String custadd) {
 		String name = customerNumber.getAttribute("disabled");
-		if (name.equalsIgnoreCase("true")) {
+		boolean isEditable = !(name!=null && name.equals(true));
+		if (isEditable) {
+//			customerNumber.clear();
 			customerNumber.sendKeys(custadd);
 		}
 
@@ -253,16 +278,10 @@ public class CustomerPage {
 
 	public void isCustomerEmailEditable(String custemail) {
 		String name = customerEmail.getAttribute("disabled");
-		if (name.equalsIgnoreCase("true")) {
+		boolean isEditable = !(name!=null && name.equals(true));
+		if (isEditable) {
+//			customerEmail.clear();
 			customerEmail.sendKeys(custemail);
-		}
-
-	}
-
-	public void isCustomerPasswordEditable(String custpass) {
-		String name = customerPassword.getAttribute("disabled");
-		if (name.equalsIgnoreCase("true")) {
-			customerPassword.sendKeys(custpass);
 		}
 
 	}

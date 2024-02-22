@@ -14,13 +14,13 @@
           <include name="loginTest"/>
         </methods>
       </class> <!-- com.inetBanking.testCases.TC_LoginTest_001 -->
-      <class name="com.inetBanking.testCases.TC_addCustomer_003">
+      <class name="com.inetBanking.testCases.TC_addCustomerTest_003">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="addCustomer"/>
         </methods>
-      </class> <!-- com.inetBanking.testCases.TC_addCustomer_003 -->
+      </class> <!-- com.inetBanking.testCases.TC_addCustomerTest_003 -->
     </classes>
   </test> <!-- BankingApp Test(failed) -->
 </suite> <!-- Failed suite [InetBankingV1] -->

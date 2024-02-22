@@ -9,7 +9,7 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.inetBanking.testCases.TC_LoginTest_001" />
-			<class name="com.inetBanking.testCases.TC_addCustomer_003" />
+			<class name="com.inetBanking.testCases.TC_addCustomerTest_003" />
 			<class name="com.inetBanking.testCases.TC_EditCustomerTest_004" />
 		</classes>
 

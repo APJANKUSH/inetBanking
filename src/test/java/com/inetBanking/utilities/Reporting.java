@@ -60,6 +60,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 	{
 		logger=extent.createTest(tr.getName()); 
 		logger.log(Status.FAIL,MarkupHelper.createLabel(tr.getName(),ExtentColor.RED)); 
+		logger.log(Status.FAIL, "TEST CASE FAILED IS "+tr.getThrowable());
 		String screenshotPath=System.getProperty("user.dir")+"\\Screenshots\\"+tr.getName()+".png";
 		
 		File f = new File(screenshotPath); 
