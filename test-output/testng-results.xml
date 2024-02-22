@@ -1,28 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-21T15:48:01 IST" name="InetBankingV1" finished-at="2024-02-21T15:48:43 IST" duration-ms="42070">
+  <suite started-at="2024-02-22T21:48:23 IST" name="Default suite" finished-at="2024-02-22T21:50:02 IST" duration-ms="98615">
     <groups>
     </groups>
-    <test started-at="2024-02-21T15:48:01 IST" name="BankingApp Test" finished-at="2024-02-21T15:48:43 IST" duration-ms="42070">
-      <class name="com.inetBanking.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@4be29ed9]" started-at="2024-02-21T15:48:02 IST" name="setUp" finished-at="2024-02-21T15:48:21 IST" duration-ms="19752" status="PASS">
+    <test started-at="2024-02-22T21:48:23 IST" name="Default test" finished-at="2024-02-22T21:50:02 IST" duration-ms="98615">
+      <class name="com.inetBanking.testCases.TC_EditCustomerTest_004">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.inetBanking.testCases.TC_EditCustomerTest_004@1ca3b418]" started-at="2024-02-22T21:48:23 IST" name="setUp" finished-at="2024-02-22T21:49:20 IST" duration-ms="56889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@4be29ed9]" started-at="2024-02-21T15:48:21 IST" name="loginTest" finished-at="2024-02-21T15:48:25 IST" duration-ms="3791" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="editCustomer()[pri:0, instance:com.inetBanking.testCases.TC_EditCustomerTest_004@1ca3b418]" started-at="2024-02-22T21:49:20 IST" name="editCustomer" finished-at="2024-02-22T21:49:58 IST" duration-ms="37265" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#dob"}
+  (Session info: chrome=122.0.6261.57)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76cf1b60f5d89d4bb652c6c9570d3ca9, findElement {using=id, value=dob}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.57, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\HPCREA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60739/devtoo..., se:cdpVersion: 122.0.6261.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76cf1b60f5d89d4bb652c6c9570d3ca9]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at com.inetBanking.testCases.TC_LoginTest_001.loginTest(TC_LoginTest_001.java:33)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#dob"}
+  (Session info: chrome=122.0.6261.57)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76cf1b60f5d89d4bb652c6c9570d3ca9, findElement {using=id, value=dob}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.57, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\HPCREA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60739/devtoo..., se:cdpVersion: 122.0.6261.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76cf1b60f5d89d4bb652c6c9570d3ca9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.getAttribute(Unknown Source)
+at com.inetBanking.pageObjects.CustomerPage.isCustomerDOBEditable(CustomerPage.java:225)
+at com.inetBanking.testCases.TC_EditCustomerTest_004.editCustomer(TC_EditCustomerTest_004.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,29 +85,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@4be29ed9]" started-at="2024-02-21T15:48:25 IST" name="tearDown" finished-at="2024-02-21T15:48:26 IST" duration-ms="1028" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.inetBanking.testCases.TC_LoginTest_001 -->
-      <class name="com.inetBanking.testCases.TC_addCustomer_003">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.inetBanking.testCases.TC_addCustomer_003@75437611]" started-at="2024-02-21T15:48:26 IST" name="setUp" finished-at="2024-02-21T15:48:36 IST" duration-ms="10186" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="addCustomer()[pri:0, instance:com.inetBanking.testCases.TC_addCustomer_003@75437611]" started-at="2024-02-21T15:48:36 IST" name="addCustomer" finished-at="2024-02-21T15:48:42 IST" duration-ms="5706" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addCustomer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking.testCases.TC_addCustomer_003@75437611]" started-at="2024-02-21T15:48:42 IST" name="tearDown" finished-at="2024-02-21T15:48:43 IST" duration-ms="521" status="PASS">
+        </test-method> <!-- editCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking.testCases.TC_EditCustomerTest_004@1ca3b418]" started-at="2024-02-22T21:49:58 IST" name="tearDown" finished-at="2024-02-22T21:50:02 IST" duration-ms="4179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.inetBanking.testCases.TC_addCustomer_003 -->
-    </test> <!-- BankingApp Test -->
-  </suite> <!-- InetBankingV1 -->
+      </class> <!-- com.inetBanking.testCases.TC_EditCustomerTest_004 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
