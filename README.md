@@ -1,0 +1,21 @@
+Page Objects
+	- IndexPage
+		# LoginTest
+		# LogoutTest
+		# ChangePasswordTest
+	- CustomerPage
+		# NewCustomerTest
+		# EditCustomer
+		# DeleteCustomer
+	- AccountPage
+		# NewAccoutTest
+		# EditAccountTest
+		# DeleteAccountTest
+	- BankFeaturePage
+		# DepositeAmmountTest
+		# WithdrawalAmmountTest
+		# FundTrasferTest
+		# BalanceEnquiryTest
+	- StatementPage
+		# MiniStatementTest
+		# CustomisedStatementTest
