@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.inetBanking.pageObjects.LoginPage;
 
-public class TC_LoginTest_001 extends BaseClass {
+public class TC001_LoginTest extends BaseClass {
 
 	
 	@Test

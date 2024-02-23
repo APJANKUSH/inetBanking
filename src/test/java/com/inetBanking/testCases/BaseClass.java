@@ -12,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
+import com.inetBanking.pageObjects.LoginPage;
 import com.inetBanking.utilities.ReadConfig;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -34,6 +36,14 @@ public class BaseClass {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(baseURL);
+		
+		logger.info("URL is opened");
+		LoginPage lp=new LoginPage(driver);
+		lp.setUserName(username);
+		logger.info("Entered username");
+		lp.setPassword(password);
+		logger.info("Entered password");
+		lp.clickSubmit();
 		
 	}
 	

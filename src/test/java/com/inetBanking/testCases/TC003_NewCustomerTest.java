@@ -4,23 +4,11 @@ import org.testng.annotations.Test;
 
 import com.inetBanking.pageObjects.CustomerPage;
 import com.inetBanking.pageObjects.LoginPage;
-public class TC_addCustomerTest_003 extends BaseClass  {
+public class TC003_NewCustomerTest extends BaseClass  {
 
 	@Test
 	public void addCustomer() throws Exception {
-		
-		
-		//Login Testcase......
-		logger.info("URL is opened");
-		LoginPage lp=new LoginPage(driver);
-		lp.setUserName(username);
-		logger.info("Entered username");
-		lp.setPassword(password);
-		logger.info("Entered password");
-		lp.clickSubmit();
-		
-		
-        //Adding new customer.......
+	    //Adding new customer.......
 		logger.info("Adding new customer...");
 		CustomerPage cp=new  CustomerPage(driver);
 		cp.clickNewCustomer();
