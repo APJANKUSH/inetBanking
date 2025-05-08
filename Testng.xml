@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="InetBankingV1">
+
+	<listeners>
+		<listener class-name="com.inetbanking.utilities.Reporting" />
+	</listeners>
+
+
+	<test name="BankingApp Test">
+		
+		<classes>
+			<class name="com.inetbanking.testCases.TC_HomePageTest_001" />
+		</classes>
+
+	</test>
+
+</suite>  
